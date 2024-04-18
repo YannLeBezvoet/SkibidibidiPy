@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "3b592c23122a5cf21a7d2f799d647513b48236080dea618a0d712eda4cc5247c"
+            "sha256": "03b6cda3d3208d35d90a3c0574d8f3cec8e2bef728a6068de9928dffcc1567e3"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,13 @@
         ]
     },
     "default": {
+        "badge": {
+            "hashes": [
+                "sha256:a7e201bbd3014d6cdb5f88f6ffa5acea370d9466280a231067cb37fcb35038c9"
+            ],
+            "index": "pypi",
+            "version": "==2020.12.3"
+        },
         "coverage": {
             "hashes": [
                 "sha256:00838a35b882694afda09f85e469c96367daa3f3f2b097d846a7216993d37f4c",
@@ -82,6 +89,12 @@
             ],
             "markers": "python_version < '3.11'",
             "version": "==1.2.0"
+        },
+        "format-keys": {
+            "hashes": [
+                "sha256:9f031bd8d297fa1a56550686c4e7508bd2cb2f290c4af069b43505f91bcd8d46"
+            ],
+            "version": "==2020.12.3"
         },
         "iniconfig": {
             "hashes": [
