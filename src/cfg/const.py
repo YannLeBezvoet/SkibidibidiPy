@@ -1,1 +1,2 @@
-outPath="./out"
+class Const:
+    outPath = ".out"
