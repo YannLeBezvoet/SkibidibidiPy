@@ -1,10 +1,15 @@
 from treeReader import treeReader
 import sys
+from cfg.const import Const
 
 def main():
-    if len(sys.argv)==1:
-        print("SkibidibidiPy by Yann Le Bezvoet - dev 1")
-        print("\tUsage : skibidibidipy /path/to/skibidibidiPython/code")
+    nbArg = len(sys.argv)
+    if nbArg==1:
+        print(Const.terminalUsage1)
+        print(Const.terminalUsage2)
+        sys.exit()
+    elif nbArg != 3:
+        print(f"{Const.terminalOneArg1}{nbArg - 1}{Const.terminalOneArg2}")
         sys.exit()
     print("Strating preprocessing")
     print ('argument list', sys.argv)
