@@ -25,3 +25,13 @@ def test_main_OneArg(capsys: pytest.CaptureFixture[str]):
     consol_output = consol_output.out.split('\n')
     consol_output[0] = expectedLine
     
+def test_main_TooManyArg(capsys: pytest.CaptureFixture[str]):
+    with patch("sys.argv", [sys.argv[0], "ArgOne", "ArgTwo", "ArgTree"]):
+            with pytest.raises(SystemExit) as pytest_wrapped_e:
+                main.main()
+    assert pytest_wrapped_e.type == SystemExit
+    expectedLine = f"{Const.terminalOneArg1}3{Const.terminalOneArg2}"
+    consol_output = capsys.readouterr()
+    consol_output = consol_output.out.split('\n')
+    consol_output[0] = expectedLine
+    
