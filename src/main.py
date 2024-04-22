@@ -11,8 +11,7 @@ def main():
     elif nbArg != 3:
         print(f"{Const.terminalOneArg1}{nbArg - 1}{Const.terminalOneArg2}")
         sys.exit()
-    print("Strating preprocessing")
-    print ('argument list', sys.argv)
+    print(Const.terminalMain1)
     treeReader.outDir()
     treeReader.copyTree(sys.argv[2])
 

@@ -4,3 +4,4 @@ class Const:
     terminalUsage2 = "\tUsage : skibidibidipy /path/to/skibidibidiTemplate /path/to/skibidibidiPython/code"
     terminalOneArg1 = "SkibidibidiPy takes exactly 2 arguments but "
     terminalOneArg2 = " were given"
+    terminalMain1 = "Strating preprocessing"

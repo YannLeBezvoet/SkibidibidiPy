@@ -23,7 +23,7 @@ def test_main_OneArg(capsys: pytest.CaptureFixture[str]):
     expectedLine = f"{Const.terminalOneArg1}1{Const.terminalOneArg2}"
     consol_output = capsys.readouterr()
     consol_output = consol_output.out.split('\n')
-    consol_output[0] = expectedLine
+    assert consol_output[0] == expectedLine
     
 def test_main_TooManyArg(capsys: pytest.CaptureFixture[str]):
     with patch("sys.argv", [sys.argv[0], "ArgOne", "ArgTwo", "ArgTree"]):
@@ -33,5 +33,12 @@ def test_main_TooManyArg(capsys: pytest.CaptureFixture[str]):
     expectedLine = f"{Const.terminalOneArg1}3{Const.terminalOneArg2}"
     consol_output = capsys.readouterr()
     consol_output = consol_output.out.split('\n')
-    consol_output[0] = expectedLine
-    
+    assert consol_output[0] == expectedLine
+
+def test_main(capsys: pytest.CaptureFixture[str]):
+        with patch("sys.argv", [sys.argv[0], "./test/rcs/skibidibidi.template", "./test/rcs/codeExemple"]):
+            main.main()
+        expectedLine = Const.terminalMain1
+        consol_output = capsys.readouterr()
+        consol_output = consol_output.out.split('\n')
+        assert consol_output[0] == expectedLine
