@@ -14,7 +14,7 @@ def main():
     print("Strating preprocessing")
     print ('argument list', sys.argv)
     treeReader.outDir()
-    treeReader.copyTree(sys.argv[1])
+    treeReader.copyTree(sys.argv[2])
 
 if __name__ == "__main__":
  main()
