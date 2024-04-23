@@ -1,5 +1,5 @@
 class FileReader:
     def __init__(self) -> None:
         pass
-    def readFile():
+    def readFile(self, path):
         pass
