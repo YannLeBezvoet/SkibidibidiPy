@@ -1,6 +1,9 @@
 from treeReader import treeReader
 import sys
 from cfg.const import Const
+from treeReader import recursiveRead
+from fileReader.fileReader import FileReader
+from fileReader.loadTemplate import loadTemplate
 
 def main():
     nbArg = len(sys.argv)
@@ -14,6 +17,9 @@ def main():
     print(Const.terminalMain1)
     treeReader.outDir()
     treeReader.copyTree(sys.argv[2])
-
+    myTemplate = loadTemplate(sys.argv[1])
+    myFileReader = FileReader(myTemplate)
+    recursiveRead.recursiveRead(".out", myFileReader)
+    
 if __name__ == "__main__":
  main()
