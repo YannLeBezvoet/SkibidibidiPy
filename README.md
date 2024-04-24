@@ -2,3 +2,10 @@
 [![Python application](https://github.com/YannLeBezvoet/SkibidibidiPy/actions/workflows/python-app.yml/badge.svg)](https://github.com/YannLeBezvoet/SkibidibidiPy/actions/workflows/python-app.yml)
 ## Presentation
 SkibidibidiPy preprocesses a code written in SkibidibidiPython to transform it into Python
+## Installation
+Clone the repo, install virtual env for skibidibidiPy whit pipenv.
+```
+git clone git@github.com:YannLeBezvoet/SkibidibidiPy.git
+pipenv install
+```
+If pipenv is not installed, please refer to pipenv documentation [Pipenv Installation]("https://github.com/pypa/pipenv?tab=readme-ov-file#installation")
