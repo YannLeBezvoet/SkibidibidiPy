@@ -9,3 +9,9 @@ git clone git@github.com:YannLeBezvoet/SkibidibidiPy.git
 pipenv install
 ```
 If pipenv is not installed, please refer to pipenv documentation [Pipenv Installation]("https://github.com/pypa/pipenv?tab=readme-ov-file#installation")
+## Usage
+Run the following command:
+```
+pipenv run main path/to/template path/to/code
+```
+The result in Python is in the .out folder
