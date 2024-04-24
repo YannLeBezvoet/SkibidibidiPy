@@ -1,11 +1,11 @@
 import os
-from fileReader import fileReader
+from fileReader.fileReader import FileReader
 
-def recursiveRead(path: str):
+def recursiveRead(path, myfileReader):
     ls = os.listdir(path)
     for element in ls:
         fullPath = f"{path}/{element}"
         if os.path.isdir(fullPath):
-            recursiveRead(fullPath)
+            recursiveRead(fullPath, myfileReader)
         elif os.path.isfile(fullPath):
-            fileReader.readFile(fullPath)
+            myfileReader.readFile(fullPath)
