@@ -20,6 +20,6 @@ def main():
     myTemplate = loadTemplate(sys.argv[1])
     myFileReader = FileReader(myTemplate)
     recursiveRead.recursiveRead(".out", myFileReader)
-    
+    print("Finish")
 if __name__ == "__main__":
  main()
