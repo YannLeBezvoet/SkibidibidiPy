@@ -1,4 +1,5 @@
 # SkibidibidiPy
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Python application](https://github.com/YannLeBezvoet/SkibidibidiPy/actions/workflows/python-app.yml/badge.svg)](https://github.com/YannLeBezvoet/SkibidibidiPy/actions/workflows/python-app.yml)
 ## Presentation
 SkibidibidiPy preprocesses a code written in SkibidibidiPython to transform it into Python
